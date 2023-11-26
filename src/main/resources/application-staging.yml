@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    username: ${db_username:imedia24}
+    password: ${db_password:pass1234}
+    url: jdbc:mysql://${db_ip:imedia_db}:${db_port:3306}/shop
+
+  flyway:
+    baseline-on-migrate: true
+    password: ${db_password:pass1234}
+    user: ${db_username:imedia24}
+    baseline-version: 0

@@ -1,0 +1,6 @@
+springdoc:
+  api-docs:
+    enabled: false # we don't need swagger in production
+  swagger-ui:
+    enabled: false
+

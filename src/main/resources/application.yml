@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    username: ${db_username}
+    password: ${db_password}
+    url: jdbc:mysql://${db_ip}:${db_port:3306}/shop
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+  flyway:
+    baseline-on-migrate: true
+    password: ${db_password}
+    user: ${db_username}
+    baseline-version: 0
+  mvc:
+    problemdetails:
+      enabled: true
